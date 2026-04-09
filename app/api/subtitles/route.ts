@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { parseYouTubeXml, sanitizeFilename, stripHtml } from "@/lib/subtitles";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs"; // Add this line
 
 // ---------------------------------------------------------------------------
 // Types
