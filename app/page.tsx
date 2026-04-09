@@ -9,6 +9,7 @@ import {
   FORMAT_EXTENSIONS,
   FORMAT_MIME_TYPES,
   parseYouTubeXml,
+  SubtitleCue, // Add this import
 } from "@/lib/subtitles";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -440,7 +441,7 @@ export default function Home() {
         delayMs={delayMs}
         setDelayMs={setDelayMs}
         onOpenSidebar={() => setIsSidebarOpen(true)}
-        onShowSavedPlaylists={() => {}}
+        //onShowSavedPlaylists={() => {}}
       />
 
       {mode === "playlist" && playlistVideos.length > 0 && (
